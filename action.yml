@@ -25,6 +25,7 @@ runs:
     - name: Publish Node
       shell: bash
       run: |
+          dir -a
           comfy --skip-prompt --no-enable-telemetry env
           comfy node publish --token ${{ inputs.personal_access_token }}
     
